@@ -15,6 +15,22 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.goliathskaraoke" name="[COLOR gold][B]Goliaths Karaoke[/B][/COLOR]" version="1.0.0" provider-name="Goliath">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="0.0.1"/>
+    <import addon="plugin.video.youtube" version="0.0.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Play Karaoke Videos, formerly known as Mikey Karaoke</summary>
+    <description lang="en">Search Karaoke Songs.....</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.jfh" name="Just For Him" version="0.0.7" provider-name="oneil/Golaith_Evolve">
 <requires>
 <import addon="xbmc.python" version="2.1.0"/>
@@ -166,26 +182,6 @@
 		<summary>Home of Goliaths Addons</summary>
 		<description>Download and install all unofficial Add-ons from Goliath</description>
 		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="script.tvguide.cerebrotv.uk.2017" name="Cerebro TV Guide UK" version="2.0.25" provider-name="Cerebros">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-		<import addon="script.module.simplejson" version="3.3.0"/>
-        <import addon="script.module.requests" />
-	</requires>
-	<extension point="xbmc.python.script" library="addon.py">
-            <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="login"/>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Cerebro TV Guide UK allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
-		<disclaimer lang="en">Cerebro TV Guide UK is based on the original TV Guide addon FTV Guide.</disclaimer>
-		<assets>
-          <icon>resources/icon.png</icon>
-          <fanart>resources/fanart.jpg</fanart>
-        </assets>
 	</extension>
 </addon>
 </addons>
