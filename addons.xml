@@ -15,7 +15,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.goliathskaraoke" name="[COLOR gold][B]Goliaths Karaoke[/B][/COLOR]" version="1.0.0" provider-name="Goliath">
+<addon id="plugin.video.goliathskaraoke" name="[COLOR gold][B]Goliaths Karaoke[/B][/COLOR]" version="1.0.1" provider-name="Goliath">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common" version="0.0.1"/>
