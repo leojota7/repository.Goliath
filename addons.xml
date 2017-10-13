@@ -50,7 +50,7 @@
 
 <addon id="plugin.video.MatsBuildsIPTV"
        name="MatsBuilds IPTV"
-       version="2.1"
+       version="2.2"
        provider-name="MatsBuilds IPTV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
