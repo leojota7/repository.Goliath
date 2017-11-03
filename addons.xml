@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.cartoons8" name="Cartoons8" version="1.0.34" provider-name="MetalKettle">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.urlresolver"  version="0.0.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en"></description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.goliathskaraoke" name="[COLOR gold][B]Goliaths Karaoke[/B][/COLOR]" version="1.0.1" provider-name="Goliath">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -29,23 +14,6 @@
     <description lang="en">Search Karaoke Songs.....</description>
     <platform>all</platform>
   </extension>
-</addon>
-
-<addon id="plugin.video.jfh" name="Just For Him" version="0.0.7" provider-name="oneil/Golaith_Evolve">
-<requires>
-<import addon="xbmc.python" version="2.1.0"/>
-<import addon="script.module.urlresolver"  version="2.10.0"/>
-<import addon="script.module.addon.common" version="2.0.0"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="default.py">
-<provides>video</provides>
-</extension>
-<extension point="xbmc.addon.metadata">
-<summary lang="en">Watch XXX content from PerfectGirls; Just for Him..  18+ only</summary>
-<description lang="en">Watch XXX content from PerfectGirls; Just for Him.. 18+ only</description>
-<disclaimer lang="en">You should be over 18 to install and use  this addon. The original author neither hosts or stores any content, the original author has no affiliation with content hosts, it is the sole responsibility of the user to ensure they have permission to view any streams provided.</disclaimer>
-<platform>all</platform>
-</extension>
 </addon>
 
 <addon id="plugin.video.MatsBuildsIPTV"
@@ -66,57 +34,6 @@
     <description lang="en">MatsBuildsIPTV Official Addon - Supplier of Great Quality and Stable Streams. Caontact me @ matsbuilds@gmail.com</description>
      <platform>all</platform>
   </extension>
-</addon>
-
-<addon id="plugin.video.onlesbefriends" name="Les-be-Friends" version="0.0.2" provider-name="oneil/Goliath_Evolve">
-<requires>
-<import addon="xbmc.python" version="2.1.0"/>
-<import addon="script.module.urlresolver"  version="2.10.0"/>
-<import addon="script.module.addon.common" version="2.0.0"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="default.py">
-<provides>video</provides>
-</extension>
-<extension point="xbmc.addon.metadata">
-<summary lang="en">HD girl on girl porn for those who like the softer touch..  18+ only</summary>
-<description lang="en">HD girl on girl porn for those who like the softer touch..  18+ only</description>
-<disclaimer lang="en">You should be over 18 to install and use  this addon. The original author neither hosts or stores any content, the original author has no affiliation with content hosts, it is the sole responsibility of the user to ensure they have permission to view any streams provided.</disclaimer>
-<platform>all</platform>
-</extension>
-</addon>
-
-<addon id="plugin.video.onmp4porn" name="mPorn" version="0.0.4" provider-name="oneil/Goliath_Evolve">
-<requires>
-<import addon="xbmc.python" version="2.1.0"/>
-<import addon="script.module.urlresolver"  version="2.10.0"/>
-<import addon="script.module.addon.common" version="2.0.0"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="default.py">
-<provides>video</provides>
-</extension>
-<extension point="xbmc.addon.metadata">
-<summary lang="en">Watch low quality, cheesy porn worth a wank...  18+ only</summary>
-<description lang="en">Watch low quality, cheesy porn worth a wank...  18+ only</description>
-<disclaimer lang="en">You should be over 18 to install and use  this addon. The original author neither hosts or stores any content, the original author has no affiliation with content hosts, it is the sole responsibility of the user to ensure they have permission to view any streams provided.</disclaimer>
-<platform>all</platform>
-</extension>
-</addon>
-
-<addon id="plugin.video.onnews12" name="News 12: Free" version="0.0.3" provider-name="oneil/Goliath_Evolve">
-<requires>
-<import addon="xbmc.python" version="2.25.0"/>
-<import addon="script.module.urlresolver"  version="2.10.0"/>
-<import addon="script.module.addon.common" version="2.0.0"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="plugin.py">
-<provides>video</provides>
-</extension>
-<extension point="xbmc.addon.metadata">
-<summary lang="en">News 12: Free; Watch live streams from News 12 for free. [COLOR red]Kodi 17 only[/COLOR]</summary>
-<description lang="en">News 12: Free; Watch live streams from News 12 for free. [COLOR red]Kodi 17 only[/COLOR]</description>
-<disclaimer lang="en">The original author neither hosts or stores any content, the original author has no affiliation with content hosts, it is the sole responsibility of the user to ensure they have permission to view any streams provided.</disclaimer>
-<platform>all</platform>
-</extension>
 </addon>
 
 <addon id="plugin.video.picasso" name="[B][COLOR cyan]PICASSO[/COLOR][/B]" version="1.0.14" provider-name="Goliath/Slim">
