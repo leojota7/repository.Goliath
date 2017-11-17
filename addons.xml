@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.video.cartoons8" name="Cartoons8" version="1.0.34" provider-name="MetalKettle">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.urlresolver"  version="0.0.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.goliathskaraoke" name="[COLOR gold][B]Goliaths Karaoke[/B][/COLOR]" version="1.0.1" provider-name="Goliath">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -13,26 +28,6 @@
     <summary lang="en">Play Karaoke Videos, formerly known as Mikey Karaoke</summary>
     <description lang="en">Search Karaoke Songs.....</description>
     <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.MatsBuildsIPTV"
-       name="MatsBuilds IPTV"
-       version="2.2"
-       provider-name="MatsBuilds IPTV">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">MatsBuildsIPTV</summary>
-    <language>en</language>
-    <description lang="en">MatsBuildsIPTV Official Addon - Supplier of Great Quality and Stable Streams. Caontact me @ matsbuilds@gmail.com</description>
-     <platform>all</platform>
   </extension>
 </addon>
 
