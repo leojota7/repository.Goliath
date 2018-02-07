@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.cartoons8" name="Cartoons8" version="1.0.34" provider-name="MetalKettle">
+<addon id="plugin.video.cartoons8" name="Cartoons8" version="2.0.0" provider-name="Goliath">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.urlresolver"  version="0.0.1"/>
@@ -31,11 +31,11 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.picasso" name="[B][COLOR cyan]PICASSO[/COLOR][/B]" version="1.0.14" provider-name="Goliath/Slim">
+<addon id="plugin.video.picasso" name="[B][COLOR cyan]PICASSO[/COLOR][/B]" version="2.1.1" provider-name="Goliath">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simplejson" version="0.0.1"/>
-    <import addon="script.module.urlresolver"  version="0.0.1"/>
+    <import addon="script.module.urlresolver" version="0.0.01"/>
     <import addon="script.module.liveresolver" version="0.0.1"/>
     <import addon="script.module.nanscrapers" version="0.5"/>
     <import addon="script.common.plugin.cache" version="0.0.1"/>
@@ -48,33 +48,12 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Picasso Addon</summary>
-    <description lang="en">Any problems tweet me @Goliath_Evolve</description>
+    <description lang="en">Any problems tweet me @Golpicasso</description>
     <platform>all</platform>
   </extension>
 </addon>
 
-<addon id="plugin.video.TheJukeBox" name="[COLOR red]T[/COLOR][COLOR white]he[/COLOR] [COLOR red]J[/COLOR][COLOR white]ukeBox[/COLOR]" version="2.0.0" provider-name="Goliath">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="script.module.urlresolver"  version="2.1.2"/>
-    <import addon="script.module.liveresolver" version="0.1.24"/>
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-
-    <import addon="script.module.metahandler" version="2.5.1"/>
-    <import addon="plugin.video.youtube" optional="true" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Music Genres brought to you by Goliath</summary>
-    <description lang="en">Any problems or want to request anything please let me know on twitter @Goliath_Evolve</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="repository.Goliath" name="Goliaths Add-ons repository" version="1.4" provider-name="Goliath">
+<addon id="repository.Goliath" name="Goliaths Add-ons repository" version="2.0.0" provider-name="Goliath">
 	<extension point="xbmc.addon.repository" name="Goliaths Repository">
 	<dir>
         <info compressed="false">https://github.com/zqfaen/tva-common/raw/master/addons.xml</info>
