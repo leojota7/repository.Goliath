@@ -31,7 +31,27 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.picasso" name="[B][COLOR cyan]PICASSO[/COLOR][/B]" version="2.1.1" provider-name="Goliath">
+<addon id="plugin.video.manstuff" name="[B][COLOR white]Man Stuff[/COLOR][/B]" version="0.0.1" provider-name="Goliath">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.simplejson" version="0.0.1"/>
+    <import addon="script.module.urlresolver"  version="0.0.1"/>
+    <import addon="script.module.liveresolver" version="0.0.1"/>
+    <import addon="script.common.plugin.cache" version="0.0.1"/>
+    <import addon="script.module.metahandler" version="0.0.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Man Stuff Addon</summary>
+    <description lang="en">For All Your Man Problems</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.picasso" name="[B][COLOR cyan]PICASSO[/COLOR][/B]" version="2.1.2" provider-name="Goliath">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simplejson" version="0.0.1"/>
