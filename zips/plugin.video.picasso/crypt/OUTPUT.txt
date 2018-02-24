@@ -1,0 +1,297 @@
+#V 0.0.1
+import xbmc , xbmcaddon , xbmcgui , xbmcplugin , requests , urllib , urllib2 , json , os , re , sys , datetime , urlresolver , random , liveresolver , base64
+from resources . lib . common_addon import Addon
+from HTMLParser import HTMLParser
+from metahandler import metahandlers
+import requests
+import downloader as Get_Files
+import extract
+import time
+if 64 - 64: i11iIiiIii
+VVeve = 'plugin.video.manstuff'
+VeevVee = Addon ( VVeve , sys . argv )
+VevVevVVevVevVev = xbmcaddon . Addon ( id = VVeve )
+iiiii = xbmcaddon . Addon ( ) . getAddonInfo
+eeeevVV = xbmc . translatePath ( os . path . join ( 'special://home/addons/' + VVeve , 'fanart.png' ) )
+II1 = xbmc . translatePath ( os . path . join ( 'special://home/addons/' + VVeve , 'fanart.png' ) )
+Veveveeeeeevev = xbmc . translatePath ( os . path . join ( 'special://home/addons/' + VVeve , 'icon.png' ) )
+I1IiiI = xbmc . translatePath ( os . path . join ( 'special://home/addons/' + VVeve + '/resources/art' , 'next.png' ) )
+IIi1IiiiI1Ii = base64 . b64decode ( 'aHR0cHM6Ly94aGFtc3Rlci5jb20v' )
+I11i11Ii = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36'
+eVeveveVe = requests . session ( )
+VVVeev = xbmc . translatePath ( 'special://home/userdata/addon_data/' + VVeve )
+Veeeeveveve = 'MAN STUFF'
+IiIi11iIIi1Ii = xbmcgui . Dialog ( )
+VeevV = xbmc . translatePath ( os . path . join ( 'special://home/addons' , 'repository.Goliath' ) )
+if 44 - 44: iiiiIi11i . eevV / VeVV + I1iII1iiII
+if 28 - 28: Ii11111i * iiI1i1
+if 46 - 46: VeeevVVeveVV * Ii * Veeve
+if not os . path . exists ( VeevV ) :
+ VVVeveeve = xbmcgui . Dialog ( ) . yesno ( Veeeeveveve , 'This Add-on requires [COLOR cyan]Goliaths Repo[/COLOR] to be installed to work correctly would you like to install it now?' , '' , yeslabel = '[B][COLOR white]YES[/COLOR][/B]' , nolabel = '[B][COLOR grey]NO[/COLOR][/B]' )
+ if VVVeveeve == 1 :
+  Ii1iI = xbmc . translatePath ( os . path . join ( 'special://home/addons' , 'packages' ) )
+  if not os . path . exists ( Ii1iI ) :
+   os . makedirs ( Ii1iI )
+  Ve = base64 . b64decode ( b'aHR0cDovL21hdHNidWlsZHMudWsvcmVwby9yZXBvc2l0b3J5LkdvbGlhdGgtMi4wLjEuemlw' )
+  I1Ii11I1Ii1i = xbmcgui . DialogProgress ( )
+  I1Ii11I1Ii1i . create ( Veeeeveveve , "" , "" , "Downloading [COLOR cyan]Goliaths Repo[/COLOR]" )
+  Vee = os . path . join ( Ii1iI , 'repo.zip' )
+  if 56 - 56: eeVeveveVee - VevVVe
+  try :
+   os . remove ( Vee )
+  except :
+   pass
+   if 8 - 8: Veeeevevevev * i1IIi11111i / I11i1i11i1I % ee / VVVevV / eeeveeVeveVVVVe
+  Get_Files . download ( Ve , Vee , I1Ii11I1Ii1i )
+  eVevevevVeVeeeveve = xbmc . translatePath ( os . path . join ( 'special://home' , 'addons' ) )
+  time . sleep ( 2 )
+  I1Ii11I1Ii1i . update ( 0 , "" , "Installing [COLOR red]Golitaths Repo[/COLOR] Please Wait" , "" )
+  extract . all ( Vee , eVevevevVeVeeeveve , I1Ii11I1Ii1i )
+  xbmc . executebuiltin ( "UpdateAddonRepos" )
+  xbmc . executebuiltin ( "UpdateLocalAddons" )
+  if 31 - 31: i111IiI + iIIIiI11 . VeVV
+  if 9 - 9: iiI1i1 - ee % I1iII1iiII % VeVV
+  if 3 - 3: VVVevV + iiiiIi11i
+def I1Ii ( ) :
+ eeveVeevVeeevV ( '[B][COLOR gold]Categories[/COLOR][/B]' , IIi1IiiiI1Ii + 'categories' , 39 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+ eeveVeevVeeevV ( '[B][COLOR gold]Categories A-Z[/COLOR][/B]' , IIi1IiiiI1Ii + 'categories' , 38 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+ eeveVeevVeeevV ( '[B][COLOR gold]Porn Stars A-Z[/COLOR][/B]' , IIi1IiiiI1Ii + 'pornstars' , 43 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+ eeveVeevVeeevV ( '[B][COLOR gold]Channels A-Z[/COLOR][/B]' , IIi1IiiiI1Ii + 'channels' , 44 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+ eeveVeevVeeevV ( '[B][COLOR gold]Best[/COLOR][/B]' , IIi1IiiiI1Ii + 'best/weekly' , 37 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+ eeveVeevVeeevV ( '[B][COLOR gold]Top Rated[/COLOR][/B]' , IIi1IiiiI1Ii + 'best/weekly' , 37 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+ eeveVeevVeeevV ( '[B][COLOR gold]Top Viewed[/COLOR][/B]' , IIi1IiiiI1Ii + 'most-viewed' , 37 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+ eeveVeevVeeevV ( '[B][COLOR gold]HD[/COLOR][/B]' , IIi1IiiiI1Ii + 'hd' , 37 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+ eeveVeevVeeevV ( '[B][COLOR gold]Most Commented[/COLOR][/B]' , IIi1IiiiI1Ii + 'most-commented/weekly' , 37 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+ eeveVeevVeeevV ( '[B][COLOR gold]Most Viewed Of 2017[/COLOR][/B]' , IIi1IiiiI1Ii + 'most-viewed/year-2017' , 37 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+ eeveVeevVeeevV ( '[B][COLOR gold]Search[/COLOR][/B]' , 'url' , 40 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+ xbmc . executebuiltin ( 'Container.SetViewMode(50)' )
+ if 81 - 81: VevVVe * eeeveeVeveVVVVe * I11i1i11i1I - VVVevV - eeVeveveVee
+def VeeVevVV ( url ) :
+ if 28 - 28: Ii11111i
+ if 'xhamster.com' in url :
+  url = url . replace ( 'https://xhamster.com' , '' )
+ else :
+  url = url
+  if 28 - 28: eevV - I1iII1iiII
+ VV = eVevV ( IIi1IiiiI1Ii + url )
+ if 70 - 70: VeeevVVeveVV % VeeevVVeveVV . eeeveeVeveVVVVe % Ii * eeVeveveVee % Veeeevevevev
+ if 23 - 23: i11iIiiIii + iiI1i1
+ eVe = '<a class="video-thumb__image-container thumb-image-container" href="https:\/\/xhamster\.com(.*?)" data-sprite="(.*?)" data-previewvideo="(.*?)">'
+ if 63 - 63: VeeevVVeveVV
+ eeVeVeeevV = re . findall ( eVe , VV , re . DOTALL )
+ if 76 - 76: iiiiIi11i / eeVeveveVee . iiI1i1 * ee - i1IIi11111i
+ for Veee in eeVeVeeevV :
+  Veveve = Veee [ 0 ] . replace ( '-' , ' ' ) . replace ( '/videos/' , '' )
+  url = Veee [ 0 ]
+  Veveveeeeeevev = Veee [ 1 ] . replace ( 's_' , '2_' )
+  Vevev ( '[B][COLOR gold]' + Veveve + '[/COLOR][/B]' , url , 41 , Veveveeeeeevev , eeeevVV , '' )
+  if 11 - 11: iiI1i1
+ VeveevVe = re . compile ( '<link rel="next" href="(.+?)"' , re . DOTALL ) . findall ( VV )
+ if 78 - 78: eevV - ee * Ii + eeVeveveVee + VVVevV + VVVevV
+ for url in VeveevVe :
+  Vevev ( '[B][COLOR white]Next Page>>>[/COLOR][/B]' , url , 37 , 'http://i.imgur.com/Uqrznbf.png' , eeeevVV , '' )
+ xbmc . executebuiltin ( 'Container.SetViewMode(50)' )
+ if 11 - 11: VVVevV - Ii % iIIIiI11 % VVVevV / Veeve - Ii
+def eeveeveVVVeevee ( url ) :
+ if 80 - 80: I11i1i11i1I * i11iIiiIii / i111IiI
+ VV = eVevV ( url )
+ if 9 - 9: ee + Veeeevevevev % ee + I1iII1iiII . i1IIi11111i
+ III1i1i = re . findall ( '<div class="item">\s+<a href="https://xhamster.com/pornstars/(.*?)" >(.*?)</a>\s+</div>' , VV , re . DOTALL )
+ if 26 - 26: VeVV
+ for IiiI11Iiiii in III1i1i :
+  if 18 - 18: eeVeveveVee
+  I1i1I1II = IiiI11Iiiii [ 1 ]
+  i1 = '/pornstars/' + IiiI11Iiiii [ 0 ]
+  Vevev ( '[B][COLOR gold]' + I1i1I1II + '[/COLOR][/B]' , i1 , 37 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+  if 48 - 48: iiiiIi11i + iiiiIi11i - VevVVe . iIIIiI11 / eevV
+ xbmc . executebuiltin ( 'Container.SetViewMode(50)' )
+ if 77 - 77: I1iII1iiII % Veeve - eeeveeVeveVVVVe + iIIIiI11
+def I11iiIiii ( url ) :
+ if 1 - 1: Ii11111i - I11i1i11i1I / I11i1i11i1I
+ VV = eVevV ( url )
+ if 46 - 46: ee * i1IIi11111i - Ii * Veeeevevevev - i111IiI
+ III1i1i = re . findall ( '<div class="item">\s+<a href="https://xhamster.com/channels/(.*?)" >(.*?)</a>\s+</div>' , VV , re . DOTALL )
+ if 83 - 83: VeVV
+ for IiiI11Iiiii in III1i1i :
+  if 31 - 31: Ii11111i - i1IIi11111i . i111IiI % Veeve - iiiiIi11i
+  I1i1I1II = IiiI11Iiiii [ 1 ]
+  i1 = '/channels/' + IiiI11Iiiii [ 0 ]
+  Vevev ( '[B][COLOR gold]' + I1i1I1II + '[/COLOR][/B]' , i1 , 37 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+  if 4 - 4: Ii11111i / iIIIiI11 . VVVevV
+ xbmc . executebuiltin ( 'Container.SetViewMode(50)' )
+ if 58 - 58: i1IIi11111i * i11iIiiIii / Veeve % i111IiI - VevVVe / Veeeevevevev
+def ii11i1 ( url ) :
+ if 29 - 29: VevVVe % iiI1i1 + iIIIiI11 / eeVeveveVee + i1IIi11111i * eeVeveveVee
+ VV = eVevV ( url )
+ if 42 - 42: ee + Veeeevevevev
+ III1i1i = re . findall ( '<div class="item">\s+<a href="https://xhamster.com/tags/(.*?)" >(.*?)</a>\s+</div>' , VV , re . DOTALL )
+ if 76 - 76: i111IiI - Ii
+ for IiiI11Iiiii in III1i1i :
+  if 70 - 70: iIIIiI11
+  I1i1I1II = IiiI11Iiiii [ 1 ]
+  i1 = '/tags/' + IiiI11Iiiii [ 0 ]
+  Vevev ( '[B][COLOR gold]' + I1i1I1II + '[/COLOR][/B]' , i1 , 37 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+  if 61 - 61: VevVVe . VevVVe
+ xbmc . executebuiltin ( 'Container.SetViewMode(50)' )
+ if 10 - 10: Veeve * VVVevV . I11i1i11i1I + Ii11111i - iIIIiI11 * I1iII1iiII
+def eVeveveevVevVeveeV ( url ) :
+ if 100 - 100: eeVeveveVee . VevVVe + eeVeveveVee
+ VV = eVevV ( url )
+ if 46 - 46: i1IIi11111i / VevVVe
+ III1i1i = re . findall ( '<a href="https://xhamster.com/categories-(.*?)" class="view-all">' , VV , re . DOTALL )
+ if 24 - 24: I11i1i11i1I . VVVevV % i1IIi11111i + iIIIiI11 % Veeve
+ for IiiI11Iiiii in III1i1i :
+  if 4 - 4: eeeveeVeveVVVVe - Ii * Veeve - I11i1i11i1I
+  I1i1I1II = IiiI11Iiiii [ 0 ]
+  i1 = IIi1IiiiI1Ii + '/categories-' + IiiI11Iiiii [ 0 ]
+  Vevev ( '[B][COLOR gold]' + I1i1I1II + '[/COLOR][/B]' , i1 , 39 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+  if 41 - 41: Veeve . iiI1i1 * Veeeevevevev % eeeveeVeveVVVVe
+ xbmc . executebuiltin ( 'Container.SetViewMode(50)' )
+ if 86 - 86: iiI1i1 + ee % i11iIiiIii * Veeeevevevev . iIIIiI11 * I11i1i11i1I
+def i1I11i1iI ( url ) :
+ VV = eVevV ( url )
+ eVe = re . compile ( '<div class="letter-categories">(.+?)</ul>' , re . DOTALL ) . findall ( VV )
+ I1ii1Ii1 = re . compile ( 'href="(.+?)"><span >(.+?)<' , re . DOTALL ) . findall ( str ( eVe ) )
+ for url , Veveve in I1ii1Ii1 :
+  Vevev ( '[B][COLOR gold]%s[/COLOR][/B]' % Veveve , url , 37 , 'https://i.imgur.com/kHN7aDk.jpg' , eeeevVV , '' )
+ xbmc . executebuiltin ( 'Container.SetViewMode(50)' )
+ if 15 - 15: Ii11111i / VVVevV . i111IiI
+def eVVVVeev ( ) :
+ iiII1i1 = xbmc . Keyboard ( '' , 'Search For Your Porn!' )
+ iiII1i1 . doModal ( )
+ if ( iiII1i1 . isConfirmed ( ) ) :
+  eeveveVVeve = iiII1i1 . getText ( ) . replace ( ' ' , '+' )
+  Ve = IIi1IiiiI1Ii + 'search.php?from=&q=' + eeveveVVeve + '&qcat=video'
+  VeeVevVV ( Ve )
+  if 80 - 80: Veeeevevevev + i1IIi11111i - i1IIi11111i % VVVevV
+def eVevV ( url ) :
+ VeVVeveeeve = { }
+ VeVVeveeeve [ 'User-Agent' ] = I11i11Ii
+ II11i1I11Ii1i = eVeveveVe . get ( url , headers = VeVVeveeeve ) . text
+ II11i1I11Ii1i = II11i1I11Ii1i . encode ( 'ascii' , 'ignore' )
+ return II11i1I11Ii1i
+ xbmcplugin . endOfDirectory ( int ( sys . argv [ 1 ] ) )
+ if 97 - 97: iIIIiI11 % VVVevV * ee + eeVeveveVee . i1IIi11111i + i1IIi11111i
+def VeeeevVeveeeveveV ( url ) :
+ IiIi11iIIi1Ii = xbmcgui . Dialog ( )
+ if not 'https' in url :
+  url = 'https://xhamster.com' + url
+ IIi1i = [ ]
+ I1I1iIiII1 = [ ]
+ if 4 - 4: iIIIiI11 + iiiiIi11i * i1IIi11111i
+ VVeeevV = ''
+ if 67 - 67: i11iIiiIii - I1iII1iiII % VevVVe . iiiiIi11i
+ VV = eVevV ( url )
+ if 77 - 77: eeeveeVeveVVVVe / iiI1i1
+ I1 = re . findall ( '"(\d+)p":"(.*?)"' , VV , re . DOTALL )
+ if 15 - 15: Ii11111i
+ for IieeeevV in I1 :
+  if 75 - 75: eeVeveveVee % eeVeveveVee . i111IiI
+  II11i1I11Ii1i = IieeeevV [ 1 ] . replace ( '\\' , '' )
+  if 5 - 5: eeVeveveVee * iIIIiI11 + Veeve . i1IIi11111i + Veeve
+  if '.flv' in IieeeevV [ 1 ] :
+   VVeeevV = '[B][COLOR gold]FLV : ' + IieeeevV [ 0 ] + '[/COLOR][/B]'
+  elif '.mp4' in IieeeevV [ 1 ] :
+   VVeeevV = '[B][COLOR gold]MP4 : ' + IieeeevV [ 0 ] + '[/COLOR][/B]'
+   if 91 - 91: iiiiIi11i
+  IIi1i . append ( VVeeevV )
+  I1I1iIiII1 . append ( II11i1I11Ii1i )
+  if 61 - 61: Ii11111i
+ if len ( IIi1i ) > 1 :
+  IiIi11iIIi1Ii = xbmcgui . Dialog ( )
+  VevVVV = IiIi11iIIi1Ii . select ( 'Please Select Quality' , IIi1i )
+  if 10 - 10: i1IIi11111i * I11i1i11i1I % Veeve / iiI1i1 / Veeve
+  if VevVVV == - 1 :
+   return
+  elif VevVVV > - 1 :
+   url = I1I1iIiII1 [ VevVVV ]
+   if 42 - 42: Ii
+ eeve = xbmcgui . ListItem ( Veveve , iconImage = 'DefaultVideo.png' , thumbnailImage = eevev )
+ eeve . setInfo ( type = 'Video' , infoLabels = { "Title" : Veveve } )
+ eeve . setProperty ( "IsPlayable" , "true" )
+ eeve . setPath ( url )
+ xbmcplugin . setResolvedUrl ( int ( sys . argv [ 1 ] ) , True , eeve )
+ if 56 - 56: iiI1i1 - VeeevVVeveVV . ee - eeeveeVeveVVVVe
+def Vevev ( name , url , mode , iconimage , fanart , description ) :
+ VVVeVeeevV = sys . argv [ 0 ] + "?url=" + urllib . quote_plus ( url ) + "&mode=" + str ( mode ) + "&name=" + urllib . quote_plus ( name ) + "&iconimage=" + urllib . quote_plus ( iconimage ) + "&description=" + urllib . quote_plus ( description )
+ VevevevVVeevevee = True
+ eeve = xbmcgui . ListItem ( name , iconImage = "DefaultFolder.png" , thumbnailImage = iconimage )
+ eeve . setInfo ( type = "Video" , infoLabels = { "Title" : name , "Plot" : description } )
+ eeve . setProperty ( 'fanart_image' , fanart )
+ if mode == 41 :
+  eeve . setProperty ( "IsPlayable" , "true" )
+  VevevevVVeevevee = xbmcplugin . addDirectoryItem ( handle = int ( sys . argv [ 1 ] ) , url = VVVeVeeevV , listitem = eeve , isFolder = False )
+ else :
+  VevevevVVeevevee = xbmcplugin . addDirectoryItem ( handle = int ( sys . argv [ 1 ] ) , url = VVVeVeeevV , listitem = eeve , isFolder = True )
+ return VevevevVVeevevee
+ if 71 - 71: i11iIiiIii + eeeveeVeveVVVVe
+ if 57 - 57: Veeeevevevev . I11i1i11i1I . I1iII1iiII
+def i11Iii ( ) :
+ IiIIIi1iIi = [ ]
+ eeVVeeeeee = sys . argv [ 2 ]
+ if len ( eeVVeeeeee ) >= 2 :
+  II1I = sys . argv [ 2 ]
+  Vev = II1I . replace ( '?' , '' )
+  if ( II1I [ len ( II1I ) - 1 ] == '/' ) :
+   II1I = II1I [ 0 : len ( II1I ) - 2 ]
+  i1II1Iiii1I11 = Vev . split ( '&' )
+  IiIIIi1iIi = { }
+  for IIII in range ( len ( i1II1Iiii1I11 ) ) :
+   iiIiI = { }
+   iiIiI = i1II1Iiii1I11 [ IIII ] . split ( '=' )
+   if ( len ( iiIiI ) ) == 2 :
+    IiIIIi1iIi [ iiIiI [ 0 ] ] = iiIiI [ 1 ]
+ return IiIIIi1iIi
+ if 91 - 91: VVVevV % I1iII1iiII % eevV
+ if 20 - 20: i1IIi11111i % ee / ee + ee
+def eeveVeevVeeevV ( name , url , mode , iconimage , fanart , description = '' ) :
+ VevVevVVevVevVev . setSetting ( 'favtype' , 'folder' )
+ VVVeVeeevV = sys . argv [ 0 ] + "?url=" + urllib . quote_plus ( url ) + "&mode=" + str ( mode ) + "&name=" + urllib . quote_plus ( name ) + "&description=" + str ( description ) + "&fanart=" + urllib . quote_plus ( fanart ) + "&iconimage=" + urllib . quote_plus ( iconimage )
+ VevevevVVeevevee = True
+ eeve = xbmcgui . ListItem ( name , iconImage = "DefaultFolder.png" , thumbnailImage = iconimage )
+ eeve . setInfo ( type = "Video" , infoLabels = { "Title" : name , 'plot' : description } )
+ eeve . setProperty ( 'fanart_image' , fanart )
+ if 'youtube.com/channel/' in url :
+  VVVeVeeevV = 'plugin://plugin.video.youtube/channel/' + description + '/'
+ if 'youtube.com/user/' in url :
+  VVVeVeeevV = 'plugin://plugin.video.youtube/user/' + description + '/'
+ if 'youtube.com/playlist?' in url :
+  VVVeVeeevV = 'plugin://plugin.video.youtube/playlist/' + description + '/'
+ if 'plugin://' in url :
+  VVVeVeeevV = url
+ III1IiiI = [ ]
+ iI = VevVevVVevVevVev . getSetting ( 'favlist' )
+ if iI == 'yes' : III1IiiI . append ( ( '[COLOR cyan]Remove From Keep Safe?[/COLOR]' , 'XBMC.RunPlugin(%s?mode=21&name=%s&url=%s&iconimage=%s)' % ( sys . argv [ 0 ] , name , url , iconimage ) ) )
+ else : III1IiiI . append ( ( '[COLOR cyan]Add To Keep Safe?[/COLOR]' , 'XBMC.RunPlugin(%s?mode=20&name=%s&url=%s&iconimage=%s)' % ( sys . argv [ 0 ] , name , url , iconimage ) ) )
+ eeve . addContextMenuItems ( III1IiiI , replaceItems = False )
+ VevevevVVeevevee = xbmcplugin . addDirectoryItem ( handle = int ( sys . argv [ 1 ] ) , url = VVVeVeeevV , listitem = eeve , isFolder = True )
+ return VevevevVVeevevee
+ if 32 - 32: VVVevV . eeeveeVeveVVVVe . eeeveeVeveVVVVe
+II1I = i11Iii ( ) ; Ve = None ; Veveve = None ; VVevevVevV = None ; iii = None ; eevev = None ; eVeeVVVeVe = None
+try : iii = urllib . unquote_plus ( II1I [ "site" ] )
+except : pass
+try : Ve = urllib . unquote_plus ( II1I [ "url" ] )
+except : pass
+try : Veveve = urllib . unquote_plus ( II1I [ "name" ] )
+except : pass
+try : VVevevVevV = int ( II1I [ "mode" ] )
+except : pass
+try : eevev = urllib . unquote_plus ( II1I [ "iconimage" ] )
+except : pass
+try : eeeevVV = urllib . unquote_plus ( II1I [ "fanart" ] )
+except : pass
+try : eVeeVVVeVe = str ( II1I [ "description" ] )
+except : pass
+if 41 - 41: ee - iiiiIi11i - iiiiIi11i
+if VVevevVevV == None or Ve == None or len ( Ve ) < 1 : I1Ii ( )
+elif VVevevVevV == 37 : VeeVevVV ( Ve )
+elif VVevevVevV == 38 : eVeveveevVevVeveeV ( Ve )
+elif VVevevVevV == 39 : ii11i1 ( Ve )
+elif VVevevVevV == 40 : eVVVVeev ( )
+elif VVevevVevV == 41 : VeeeevVeveeeveveV ( Ve )
+elif VVevevVevV == 42 : i1I11i1iI ( Ve )
+elif VVevevVevV == 43 : eeveeveVVVeevee ( Ve )
+elif VVevevVevV == 44 : I11iiIiii ( Ve )
+if 68 - 68: i1IIi11111i % i111IiI
+xbmcplugin . endOfDirectory ( int ( sys . argv [ 1 ] ) )
+# dd678faae9ac167bc83abf78e5cb2f3f0688d3a3
